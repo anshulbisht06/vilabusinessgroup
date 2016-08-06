@@ -1,0 +1,104 @@
+.ui.menu{
+	border-radius: 0;
+}
+main > section.content{
+	margin-bottom: 120px;
+}
+#smallmenu{
+	display: none;
+}
+.bg-image{
+	width: 100%;
+}
+div#s2 > p{
+    font-size: 16px!important;
+}
+.show{
+	display: inline!important;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 2s; /* Firefox < 16 */
+	-ms-animation: fadein 2s; /* Internet Explorer */
+	-o-animation: fadein 2s; /* Opera < 12.1 */
+	animation: fadein 2s;
+}
+.hide{
+	display: none!important;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.welcome{
+    text-align: center;
+	width: 100%;
+    position: absolute;
+    top: 70%;
+}
+
+.ui.ribbon.label{
+	left: calc(-4.2rem - 0.4em)!important;
+}
+.gold{
+	color: #FFD700;
+}
+.center{
+	text-align: center;
+}
+
+/*.services > h3.header{
+	display: inline;
+}
+*/
+@media screen and (max-width: 420px) {
+    section#s3{
+		margin-top: 210px;
+    }
+    #largemenu{
+    	display: none;
+    }
+    #smallmenu{
+        position: fixed;
+    	display: block;
+        top: 0.1px;
+    	width: 100%;
+    	border-radius: 0;
+        font-weight: bold;
+    }
+    #menubar1{
+    	max-height: 11rem;
+    }
+    div#s2 > p{
+        font-size: 14px!important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 419px){
+    section#s3{
+		margin-top: 310px;
+    }
+}
