@@ -3,11 +3,11 @@ var morgan = require('morgan');
 var path = require('path');
 var bodyParser = require('body-parser');
 var mail = require('./scripts/mail');
-var port = 5001;
+var port = 5002;
 var app = express();
 var app_folder = "";
 app.use(morgan('dev'));
-if(process.env.NODE_ENV === 'prod'){
+if(process.env.NODE_ENV === 'prod1'){
 	app_folder = "/dist";
 	app.use(express.static(path.join(__dirname + app_folder)));
 }

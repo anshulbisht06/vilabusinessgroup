@@ -1,5 +1,5 @@
 var nodemailer = require('nodemailer');
-
+var setting = require('./setting')
 // create reusable transporter object using the default SMTP transport
 module.exports = { 
 	mail:function(data, callback){
@@ -9,7 +9,7 @@ module.exports = {
 			var message = data.message.trim();
 			var phone = data.phone.trim();
 			if(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/.test(source) && /^[789]\d{9}$/.test(phone) && name!='' && message!=''){
-				var transporter = nodemailer.createTransport('smtps://ansh%2Evengaboyz%40gmail.com:9999504540@smtp.gmail.com');
+				var transporter = nodemailer.createTransport(setting.smtpDetails);
 				// setup e-mail data with unicode symbols
 				message = "Name: "+name+"\n\n"+"Source: "+source+"\n\n"+"Phone: "+phone+"\n\n"+"Message: "+message;
 				var mailOptions = {
