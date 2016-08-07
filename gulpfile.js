@@ -7,6 +7,7 @@ var cssnano= require('gulp-cssnano');
 var imagemin= require('gulp-imagemin');
 var cache= require('gulp-cache');
 var del= require('del');
+var Promise = require('es6-promise').Promise;
 var runSequence= require('run-sequence');
 var removeHtmlComments = require('gulp-remove-html-comments');
 
